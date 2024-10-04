@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Math Memory Match Game</title>
+    <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MathMatch</h1>                         
+        </header>
+        <div id="game-options">
+            <label for="game-type">Choose a Game:</label>
+            <select id="game-type">
+                <option value="squares" selected>Squares</option>
+                <option value="multiplication-2">Multiplication by 2</option>
+                <option value="multiplication-3">Multiplication by 3</option>
+                <option value="multiplication-4">Multiplication by 4</option>
+                <option value="multiplication-5">Multiplication by 5</option>
+                <option value="multiplication-6">Multiplication by 6</option>
+                <option value="multiplication-7">Multiplication by 7</option>
+                <option value="multiplication-8">Multiplication by 8</option>
+                <option value="multiplication-9">Multiplication by 9</option>
+                <option value="multiplication-10">Multiplication by 10</option>
+                <option value="multiplicationAll">Multiplication by All (2-10)</option>
+            </select>
+            <button id="start-game-btn">Start Game</button>
+        </div>
+       
+        <div id="game-container">
+            <div id="results">
+                <div class="score">
+                    <p>Total Clicks: <span id="total-clicks">0</span></p>
+                    <p>Best Score: <span id="best-score">N/A</span></p>
+                </div>               
+                <p id="best-score-announcement" style="color: green; font-weight: bold; text-align:end; margin:0;"></p>
+                <p id="most-clicked-pairs"></p>               
+            </div>
+            <div class="reveal"><button id="reveal-btn">Reveal All</button> </div> 
+            <div id="game"></div>
+        </div>       
+         <div style="font-size: small;"><a target="_blank" href="https://icons8.com/icon/J6U5jD20pZlb/cancel" style="text-decoration: none; color:black">Cancel</a> icon by <a target="_blank" href="https://icons8.com" style="text-decoration: none; color:black">Icons8</a>  </div>     
+    </div>
+    
+    <script src="constants.js"></script>
+    <script src="utils.js"></script>
+    <script src="ui.js"></script>
+    <script src="events.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
+        
